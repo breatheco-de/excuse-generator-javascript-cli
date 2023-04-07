@@ -1,0 +1,9 @@
+{
+  "grading": "isolated",
+  "difficulty": "easy",
+  "duration": 3,
+  "exercisesPath": ".learn/exercises",
+  "description": "Create an excuse generator with a CLI using Javascript",
+  "title": "Excuse Generator CLI with Javascript",
+  "slug": "excuse-generator-cli-with-javascript"
+}
