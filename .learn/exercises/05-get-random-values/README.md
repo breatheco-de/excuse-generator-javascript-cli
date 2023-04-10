@@ -20,6 +20,6 @@ let randomNumber = Math.floor(Math.random() * upperLimit);
 
 ## Expected Output:
 
-```
+```js
 the grandma ate my food before the class
 ```

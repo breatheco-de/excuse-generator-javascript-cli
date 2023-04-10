@@ -10,6 +10,6 @@ Now that we know how to get a random value from an array, let's get the random v
 
 ## Expected Output:
 
-```
+```js
 his turtle crushed the phone during my launch
 ```
