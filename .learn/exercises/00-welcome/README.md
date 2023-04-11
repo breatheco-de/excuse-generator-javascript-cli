@@ -1,6 +1,6 @@
 # `00` Welcome
 
-Welcome to this tutorial about how to create an excuse generator CLI with Javascript.
+Welcome, let's create an excuse generator CLI with Javascript.
 
 In this project you'll be learning about generating random numbers, accesing array values, concatenating strings, and improving your programming logic with a cool assignment that will be very fun.
 
