@@ -7,11 +7,17 @@ Now that you have your `app.js` file, we can start running it by clicking on the
 1. Add the following code in the `app.js` file and run it.
 
 ```js
-console.log("Hello world")
+console.log("Hello world");
+```
+
+## Expected Output
+
+```javascript
+Hello world
 ```
 
 ## 💡 Hint:
 
 + This is the build button:
 
-![build-button](../../assets/build.png?raw=true)
+![build-button](https://github.com/breatheco-de/excuse-generator-javascript-cli/blob/main/.learn/assets/build.png?raw=true)

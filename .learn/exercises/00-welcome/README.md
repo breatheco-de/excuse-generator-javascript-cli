@@ -1,26 +1,9 @@
-# `01` First Exercise
+# `00` Welcome
 
-We created this first exercise as an example, you can find it located in the folder `./01-hello-world`.
+Welcome to this tutorial about how to create an excuse generator CLI with Javascript.
 
-1. Every exercise must be located on a separate folder and it must have a README.md file inside with the exercise instructions written in markdown.
-2. You can have just a README file and it will be like a page in a book, no code files.
-3. You can also add a `README.[lang].md` file for translations, for example: `README.es.md` for spanish.
+In this project you'll be learning about generating random numbers, accesing array values, concatenating strings, and improving your programming logic with a cool assignment that will be very fun.
 
-## Video compatibility
+On this project we'll guide you step-by-step until you complete the assignment. Teaching you all these new concepts with automated tests that will tell you if you are going in the right path.
 
-If you want to include some video introduction for each exercise, add a `intro` property in the markdown frontmatter of the README.md for that particular exercise:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
-
-You can also add a video solution for each exercise by adding a `tutorial` property on the markdown frontmatter of it's README.md:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
+I hope you enjoy the project and learn new concepts here!

@@ -1,9 +1,14 @@
 {
-  "grading": "isolated",
+  "grading": "incremental",
   "difficulty": "easy",
   "duration": 3,
   "exercisesPath": ".learn/exercises",
   "description": "Create an excuse generator with a CLI using Javascript",
   "title": "Excuse Generator CLI with Javascript",
-  "slug": "excuse-generator-cli-with-javascript"
+  "slug": "excuse-generator-cli-with-javascript",
+  "editor": {
+    "mode": "preview",
+    "agent": "vscode",
+    "version": "1.0.72"
+  }
 }

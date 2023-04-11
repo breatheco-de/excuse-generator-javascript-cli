@@ -2,7 +2,7 @@
 
 Now we can print our first excuse in the terminal. The excuses will follow this structure:
 
-![excuse structure](../../assets/excuse-structure.gif)
+![excuse structure](https://github.com/breatheco-de/excuse-generator-javascript-cli/blob/main/.learn/assets/excuse-structure.gif?raw=true)
 
 Basically it has a Who?, a What?, and a When?
 
