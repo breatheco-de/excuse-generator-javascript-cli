@@ -22,7 +22,7 @@ let developers = ["Karla", "Alex", "Joe", "Thomas"];
 
 2. Access programmatically to the third element of the array and print it in the console.
 
-## 💡 Hint:
+## 💡 Hints:
 
 + This is the syntax to access an array value: `arrayName[position]` (Remember the position of elements starts in 0, so the position of the first element is 0, the position of the second element is 1, and so on).
 
