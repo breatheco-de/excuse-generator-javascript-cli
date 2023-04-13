@@ -6,8 +6,6 @@ Disneyland for procrastinators and lazy people.
 
 This project is ideal to are avoiding someone annoying, it takes no more than 20 lines of code, and it can save you for the rest of your life!
 
-![this exact same picture](https://github.com/breatheco-de/exercise-excuse-generator-python-cli/blob/master/preview.gif?raw=true)
-
 ## The Goal
 
 We wanted a project that used very little Python but still with a very fun application, the excuse generator takes 20 lines of code, is super simple to understand and is the perfect first-ish project for any beginner developer.
