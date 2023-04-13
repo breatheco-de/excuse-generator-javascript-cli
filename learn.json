@@ -7,6 +7,7 @@
   "description": "Create an excuse generator with a CLI using Javascript",
   "title": "Excuse Generator CLI with Javascript",
   "slug": "excuse-generator-cli-with-javascript",
+  "preview": "https://breathecode.herokuapp.com/v1/media/file/screenshot-2023-04-13-at-4-31-02-pm-png",
   "editor": {
     "mode": "preview",
     "agent": "vscode",
