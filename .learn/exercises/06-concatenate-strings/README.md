@@ -1,4 +1,4 @@
-# `04` Concatenate Strings
+# `06` Concatenate Strings
 
 We were able to access to one of the array values, but that's not it, if we want to generate a excuse, we need to have the full structure, so we should get a value from each of the arrays and add them together in one sentence. 
 
