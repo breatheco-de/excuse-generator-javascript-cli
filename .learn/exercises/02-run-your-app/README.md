@@ -1,6 +1,6 @@
 # `02` Run Your App
 
-Now that you have your `app.js` file, we can start running it by clicking on the build button that's located on top of the instructions.
+Now that we've created the `app.js` file, we can run it by clicking on the build button that's located on top of the instructions.
 
 ## 📝 Instructions:
 
@@ -15,6 +15,8 @@ console.log("Hello world");
 ```javascript
 Hello world
 ```
+
+> You'll be able to see the result in the terminal.
 
 ## 💡 Hint:
 

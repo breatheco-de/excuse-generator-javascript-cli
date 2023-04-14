@@ -1,6 +1,6 @@
 # `05` Access Array Values Randomly
 
-Great! So far we've learned how to generate random integer numbers and accessing to array values by using the position of the element.
+So far we've learned how to generate random integer numbers and accessing to array values by using the position of the element.
 
 Now if we use all that we've learned so far we can access to random values of our array.
 

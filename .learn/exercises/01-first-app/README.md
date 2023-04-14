@@ -1,6 +1,6 @@
 # `01` First App
 
-We are going to start this project by creating our first Javascript APP, in this case it will be a CLI (Command Line Interface). We are going to run this APP through the terminal and see the results right there as well.
+We are going to start this project by creating our Javascript app. As we are using Learnpack for this assignment, we'll be able to run it very easily and see the results in the terminal.
 
 ## 📝 Instructions:
 
