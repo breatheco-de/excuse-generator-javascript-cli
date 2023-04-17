@@ -4,16 +4,16 @@
 
 Disneyland for procrastinators and lazy people. 
 
-This project is ideal to are avoiding someone annoying, it takes no more than 20 lines of code, and it can save you for the rest of your life!
+This project is ideal {when you are} avoiding someone annoying, it takes no more than 20 lines of code, and it can save you for the rest of your life!
 
 ## The Goal
 
-We wanted a project that used very little Python but still with a very fun application, the excuse generator takes 20 lines of code, is super simple to understand and is the perfect first-ish project for any beginner developer.
+We wanted a project that used very little Python but {is} a very fun application{.  The} excuse generator takes 20 lines of code, is super simple to understand and is the perfect first-ish project for any beginner developer.
 
 ## 🌱  How to start this project?
 
 1. Make sure you have a Github account at:  https://github.com
-2. We recommend to open this reposiory using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively you can cloning it on your local computer using the `git clone` command. 
+2. We recommend {opening} this reposiory using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively you can cloning it on your local computer using the `git clone` command. 
 
 This is the repository you need to open or clone:
 
@@ -32,7 +32,7 @@ $ learnpack start
 
 ## Instructions
 
-Please create a python script that generates an excuse each time it is runned.
+Please create a python script that generates an excuse each time it is {ran}.
 
 ## Discuss with your classmates the strategy first
 
