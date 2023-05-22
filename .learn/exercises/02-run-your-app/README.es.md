@@ -1,26 +1,25 @@
-# `01` Primer Ejercicio
+# `02` Corre tu aplicación 
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+Ahora que hemos creado el archivo `app.js`, podemos correrla haciendo clic en el botón que dice `build` situado en la parte superior de las instrucciones.
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+## 📝 Instrucciones
 
-## Inserta videos
+1. Añade el siguiente código en el archivo `app.js` y correlo.
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+console.log("Hello world");
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+## Salida Esperada
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```javascript
+Hello world
 ```
+
+> Vas a poder ver el resultado en la terminal. 
+
+## 💡 Pista:
+
++ Este es el botón build:
+
+![botón-build](https://github.com/breatheco-de/excuse-generator-javascript-cli/blob/main/.learn/assets/build.png?raw=true)

@@ -1,26 +1,11 @@
-# `01` Primer Ejercicio
+# `03.1` Genera Valores Aleatorios
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+Aprendamos nuevos conceptos empezando por generar un número aleatorio. Para poder generar un número aleatorio, podemos usar la función `Math.random()` de Javascript que va a generar un número aleatorio entre 0 y 1 (excluyendo ambos).
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+## 📝 Instrucciones:
 
-## Inserta videos
+1. Genera un número aleatorio usando la función `Math.random()` e imprime el número en la consola.
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
+## 💡 Pista:
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
-
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
++ Aquí hay más información sobre la función `Math.random()`: https://www.w3schools.com/js/js_random.asp.
