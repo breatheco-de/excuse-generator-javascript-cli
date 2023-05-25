@@ -1,26 +1,38 @@
-# `01` Primer Ejercicio
+# `04` Acceder a valores de un Array
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+Los arrays son una colección o lista de datos, se utiliza para almacenar datos relacionados todos juntos, por ejemplo, podemos almacenar una lista de carros, una lista de personas, y así sucesivamente.
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+En este proyecto, vamos a usar arrays para almacenar las diferentes oraciones que vamos a usar en nuestra excusa.
 
-## Inserta videos
+Para poder utilizar los datos almacenados en nuestro array, tenemos que acceder a los elementos. La forma de acceder a los valores de un array, es usando su posición en el array. Aquí hay un ejemplo de cómo acceder a los valores del array.
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+// En este ejemplo vamos a acceder al segundo valor del array ("corolla").
+let cars = ["mustang", "corolla", "accent"];
+console.log(cars[1]); // This will print corolla
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+> Ten en cuenta que el segundo elemento está situado en la posición 1.
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+## 📝 Instrucciones:
+
+1. Elimina todo el código añadido en los pasos anteriores.
+
+2. Agrega el siguiente array en tu código:
+
+```js
+let developers = ["Karla", "Alex", "Joe", "Thomas"];
 ```
+
+3. Accede programáticamente al tercer elemento del array e imprímelo en la consola.
+
+## 💡 Pistas:
+
++ Esta es la sintaxis para acceder a un valor del array: `arrayName[position]` (recuerda que la posición de los elementos empiezan en 0, así que la posición del primer elemento es 0, la posición del segundo elemento es 1, y así sucesivamente)
+
++ Recuerda acceder programáticamente al valor del array y no lo imprimas manualmente.
+
+
+
+
+

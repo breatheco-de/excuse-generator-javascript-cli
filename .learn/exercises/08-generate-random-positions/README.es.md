@@ -1,26 +1,11 @@
-# `01` Primer Ejercicio
+# `08` Genera Posiciones Aleatorios 
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+## 📝 Instrucciones:
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
 
-## Inserta videos
+1. Genera un número aleatorio que pueda ser utilizado para acceder a un valor para cada uno de los arrays (`who`, `what`, and `when`) y almacena cada uno de estos valores en diferentes variables. 
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
+## 💡 Pista:
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
-
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
++ Recuerda que el número aleatorio usado como la 
++ Remember the random number used as the position to access a value from the array should be between 0 and the length of the array (Each of the arrays have different length).

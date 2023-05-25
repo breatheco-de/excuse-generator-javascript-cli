@@ -1,26 +1,28 @@
-# `01` Primer Ejercicio
+# `05` Acceder a los Valores de un Array Aleatoriamente
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+Hasta ahora hemos aprendido a cómo generar números enteros aleatorios y a acceder a valores de un array usando la posición del elemento. 
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+Retrocediendo a cómo generamos anteriormente números enteros aleatorios dentro de un rango, teníamos algo similar a esto:
 
-## Inserta videos
-
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+Entonces, si queremos usar este número aleatorio para obtener un valor de un array, entonces el rango del número debería estar entre 0 y la longitud del array -1. El código se verá algo así: 
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+let names = ["Hannah", "John", "Alejandro"];
+let randomArrayPosition = Math.floor(Math.random() * names.length-1);
 ```
+
+Y esta `randomArrayPosition` (posición aleatoria del array) que generamos puede ser utilizada para acceder a un valor de un array.
+
+## 📝 Instrucciones:
+
+1. Genera un número aleatorio que pueda ser utilizado para acceder a un valor del array `developers`. 
+
+2. Utiliza esa posición aleatoria generada para acceder a un valor del array `developers` e imprime el valor en la consola. 
+
+## 💡 Pista:
+
++ Recuerda que el número aleatorio utilizado como posición para acceder a un valor del array debe estar entre 0 y la longitud del array.

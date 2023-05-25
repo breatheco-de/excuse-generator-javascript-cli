@@ -1,22 +1,22 @@
-# `03.2` Generate Random Values
+# `03.2` Genera Valores Aleatorios
 
-In the previous step we learned how to generate a random number between 0 and 1 (Excluding both). In order to get a number that can be used to access array values, it should be an integer (Without decimals) and the number should be between 0 and the length of the array - 1 (It's the length - 1 because the position numbers starts from 0 and not 1).
+En el paso anterior aprendimos cómo generar un número aleatorio entre 0 y 1 (excluyendo ambos). Para poder obtener el número que puede ser utilizado para acceder a los valores del array, debe de ser un entero (sin decimales) y el número debe estar entre 0 y la longitud del array - 1 (es de longitud -1 porque los números de posición empiezan en 0 y no 1)
 
-### Generate random number between a range:
+### Genera números aleatorios entre un rango:
 
-We know how to get random numbers, now let's add a variation to it and get only random numbers between a specific range (Between two numbers). Here is an example:
+Sabemos cómo obtener números aleatorios, ahora añadamos una variación y obtengamos solo números aleatorios entre un rango específico (entre 2 números). Aquí hay un ejemplo.
 
 ```js
-// We are going to generate a random number between 1 and 10.
+// Vamos a generar un número aleatorio entre 1 y 10.
 let randomNumber = (Math.random() * 10) + 1
-console.log(randomNumber) // This will print a random number with decimals between 1 and 10. e.g.: 3.435
+console.log(randomNumber) // Esto va a imprimir un número aleatorio con decimales entre 1 y 10, por ejemplo 3.435 
 ```
 
-> We are multiplying the random number by the upper limit of the range and sum to this result the lower limit of the range.
+> Estamos multiplicando el número aleatorio por el límite superior del rango y sumando a este resultado el límite inferior del rango.
 
-### Convert a float number into an integer:
+### Convertir un número flotante en entero:
 
-In order to convert a float number (A number with decimals) into an integer, we can use the `Math.floor()` Javascript function, which will get only the integer part of the number. Here is an example of how it works:
+Para poder convertir un flotante (número con decimales) en entero, podemos usar la función `Math.floor()` de Javascript, que va a obtener solamente la parte entera del número. Aquí hay un ejemplo de como funciona: 
 
 ```js
 let myFloatNumber = 23.567324;
@@ -24,20 +24,21 @@ let myIntegerNumber = Math.floor(myFloatNumber);
 console.log(myIntegerNumber); // This will print 23
 ```
 
-### Generate a random integer number between a range:
+### Generar un número entero aleatorio entre un rango: 
 
-Now that we know how to generate a random number between a specific range and convert a float number into an integer, then we are now able to generate a random integer number that can be used to access array values. This is how all together would look like:
+Ahora que ya sabemos cómo generar un número aleatorio entre un rango específico y cómo convertir un flotante en entero, vamos a poder generar un número entero aleatorio que puede ser utilizado para acceder a los valores de un array. Así es como se vería todo en conjunto: 
+
 
 ```js
 let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit
 ```
 
-> If you replace the upperLimit and lowerLimit by the limits of your range, then you will be able to generate a random integer number that belongs to the range.
+> Si remplazas el límite superior y el límite inferior de tu rango, entonces vas a poder generar un número entero aleatorio que pertenece al rango.
 
-## 📝 Instructions:
+## 📝 Instrucciones:
 
-1. Generate a random integer number between 0 and 4.
+1. Genera un número entero aleatorio entre 0 y 4.
 
-## 💡 Hint:
+## 💡 Pista:
 
-+ If the lower limit is 0, then you don't have to sum anything.
++ Si el límite inferior es 0, entonces no tienes que sumar nada.

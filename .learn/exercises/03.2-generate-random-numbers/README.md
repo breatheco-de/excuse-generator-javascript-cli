@@ -1,6 +1,6 @@
 # `03.2` Generate Random Values
 
-In the previous step we learned how to generate a random number between 0 and 1 (Excluding both). In order to get a number that can be used to access array values, it should be an integer (Without decimals) and the number should be between 0 and the length of the array - 1 (It's the length - 1 because the position numbers starts from 0 and not 1).
+In the previous step, we learned how to generate a random number between 0 and 1 (Excluding both). In order to get a number that can be used to access array values, it should be an integer (Without decimals) and the number should be between 0 and the length of the array - 1 (It's the length - 1 because the position numbers start from 0 and not 1).
 
 ### Generate random number between a range:
 

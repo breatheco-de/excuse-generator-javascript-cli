@@ -20,6 +20,6 @@ Hello world
 
 ## 💡 Pista:
 
-+ Este es el botón build:
++ Este es el botón `build`:
 
 ![botón-build](https://github.com/breatheco-de/excuse-generator-javascript-cli/blob/main/.learn/assets/build.png?raw=true)

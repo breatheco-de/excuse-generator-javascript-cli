@@ -12,7 +12,7 @@ let when = ['before the class','right in time','when I finished','during my lunc
 
 With an array for each part of the excuse structure, we can generate many different combinations between them to get more excuses.
 
-Getting back to our problem, we already know how to get random value from an array, but in this case, we need to get a random value from three different arrays, and in order to generate a excuse from these values, we have to put them together in one string, that's exactly when string concatenation comes to action!
+Getting back to our problem, we already know how to get a random value from an array, but in this case, we need to get a random value from three different arrays, and in order to generate an excuse from these values, we have to put them together in one string, that's exactly when string concatenation comes to the action!
 
 ## 📝 Instructions:
 
@@ -22,7 +22,7 @@ Getting back to our problem, we already know how to get random value from an arr
 let jobTitle = ["Software developer", "Technical lead", "Data scientist", "CTO"];
 ```
 
-2. Get a random value from each of the arrays (`developers` and `jobTitles`) and concatenate together to get a sentence with this structure:
+2. Get a random value from each of the arrays (`developers` and `jobTitles`) and concatenate them together to get a sentence with this structure:
 
 ```js
 {developer} is our {jobTitle}
@@ -38,7 +38,7 @@ let jobTitle = ["Software developer", "Technical lead", "Data scientist", "CTO"]
 "Joe is our Software developer"
 ```
 
-> Notice that all these are different possible outputs. In your case, you should only print one but as it will be randomly generated, it should be different everytime you build it.
+> Notice that all these are different possible outputs. In your case, you should only print one but as it will be randomly generated, it should be different every time you build it.
 
 ## 💡 Hint:
 

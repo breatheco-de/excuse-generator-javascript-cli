@@ -1,8 +1,8 @@
 # `05` Access Array Values Randomly
 
-So far we've learned how to generate random integer numbers and accessing to array values by using the position of the element.
+So far, we've learned how to generate random integer numbers and accessing to array values by using the position of the element.
 
-Now if we use all that we've learned so far we can access to random values of our array.
+Now if we use all that we've learned so far, we can access random values of our array.
 
 Going back to how we generated random integer numbers between a range before, we had something similar to this:
 
@@ -10,7 +10,7 @@ Going back to how we generated random integer numbers between a range before, we
 let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit
 ```
 
-So if we want to use this random number to get a value from an array, then the range of the number should be between 0 and the lentgh of the array -1. The code will look something like this:
+So if we want to use this random number to get a value from an array, then the range of the number should be between 0 and the length of the array -1. The code will look something like this:
 
 ```js
 let names = ["Hannah", "John", "Alejandro"];

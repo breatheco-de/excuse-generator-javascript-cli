@@ -8,4 +8,4 @@ Vamos a empezar este proyecto creando nuestra aplicación Javascript. Como estam
 
 ## 💡 Pista:
 
-+ La raíz del proyecto es donde está situado el archivo `learn.json`
++ La raíz del proyecto es donde se encuentra el archivo `learn.json`
