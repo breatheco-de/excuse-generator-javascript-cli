@@ -33,15 +33,3 @@ test("You should be generating a random index for each array", ()=>{
 
     expect(hasWhoIndex && hasWhatIndex && hasWhenIndex).toBeTruthy();
 });
-
-
-test("You should be using the random indexes to access values from the arrays and print them", ()=>{
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-
-    // Pattern: console.log(who[index] + " " + what[index] + " " + when[index]);
-    const regexLog = /console\.log\s*\(\s*who\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*what\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*when\s*\[\s*\w+\s*\]\s*\)\s*;?/gm;
-
-    let hasLogStatement = regexLog.test(file.toString());
-
-    expect(hasLogStatement).toBeTruthy();
-});

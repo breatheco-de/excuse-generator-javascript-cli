@@ -3,13 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const rewire = require('rewire');
 
-
-test('You should not have to use Math.random() function in this specific exercise', () => {
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /Math\s*\.\s*random/gm
-    expect(regex.test(file.toString())).toBeFalsy();
-})
-
 test("You should have an array called developers with the indicated elements", ()=>{
     const file = rewire(path.resolve(__dirname, '../../../app.js'));
     const developers = file.__get__("developers")

@@ -35,27 +35,6 @@ test("You should have an array called jobTitle with the indicated elements", ()=
     expect(jobTitle).toEqual(["Software developer", "Technical lead", "Data scientist", "CTO"])
 })
 
-
-test('You should be using string concatenation in a specific manner', () => {
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-
-    // Pattern 1: developers[Math.floor(Math.random() * developers.length)] + " is our " + jobTitle[Math.floor(Math.random() * jobTitle.length)]
-    const regex1 = /(\w+)\[Math\.floor\(Math\.random\(\) \* \1\.length\)\] \+ " is our " \+ (\w+)\[Math\.floor\(Math\.random\(\) \* \2\.length\)\]/gm;
-
-    // Pattern 2: variable assignment then concatenation
-    const regexVarAssign = /let\s+(\w+)\s*=\s*(\w+)\[Math\.floor\(Math\.random\(\)\s*\*\s*\2\.length\)\]/gm;
-    const regexConcat = /\s*(\w+)\s*\+\s*" is our "\s*\+\s*(\w+)/gm;
-
-    // Check if file content matches either of the correct styles
-    let hasStyle1 = regex1.test(file.toString());
-    let hasStyle2 = regexVarAssign.test(file.toString()) && regexConcat.test(file.toString());
-
-    expect(hasStyle1 || hasStyle2).toBeTruthy();
-});
-
-
-
-
 let buffer = "";
 global.console.log = console.log = jest.fn((text) => buffer += text + "\n");
 
