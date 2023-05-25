@@ -2,6 +2,8 @@
 
 Hasta ahora hemos aprendido a cómo generar números enteros aleatorios y a acceder a valores de un array usando la posición del elemento. 
 
+Entonces, si utilizamos todo lo que hemos aprendido hasta ahora, podemos acceder a los valores aleatorios de nuestro array.
+
 Retrocediendo a cómo generamos anteriormente números enteros aleatorios dentro de un rango, teníamos algo similar a esto:
 
 ```js

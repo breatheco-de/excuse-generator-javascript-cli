@@ -1,4 +1,4 @@
-# `09` Accesa a valores aleatoriamente
+# `09` Accesar a Valores Aleatoriamente
 
 Nosotros generamos los números aleatorios para acceder a elementos de los arrays `who`, `what`, y `when`, ahora es momento de utilizarlos.
 

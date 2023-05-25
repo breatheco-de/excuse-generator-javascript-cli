@@ -2,7 +2,7 @@
 
 So far, we've learned how to generate random integer numbers and accessing to array values by using the position of the element.
 
-Now if we use all that we've learned so far, we can access random values of our array.
+Now if we use all that we've learned so far, we can access the random values of our
 
 Going back to how we generated random integer numbers between a range before, we had something similar to this:
 

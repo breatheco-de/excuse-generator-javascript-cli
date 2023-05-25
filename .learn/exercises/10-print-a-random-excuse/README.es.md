@@ -1,4 +1,4 @@
-# `10` Imprime una excusa aleatoria
+# `10` Imprimir una excusa aleatoria
 
 ## 📝 Instrucciones:
 

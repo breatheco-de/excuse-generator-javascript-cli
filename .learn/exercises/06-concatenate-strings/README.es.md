@@ -2,7 +2,7 @@
 
 El mejor enfoque para este proyecto es dividir nuestra excusa por su estructura, usando un array para cada oración, para que podamos obtener un valor diferente para cada una de ellas.
 
-Podemos dividir nuestra excusa por **quién** la hizo, **qué** pasó, **cuando** pasó. Si ese es el caso, podemos tener un array para valores diferentes de **quién**, otro para valores diferentes de **qué**, y otro para valores diferentes de **cuando**. Todo junto se vería así:
+Podemos dividir nuestra excusa por **who** (**quién**) la hizo, **what** (**qué**) pasó, **when** (**cuando**) pasó. Si ese es el caso, podemos tener un array para valores diferentes de **quién**, otro para valores diferentes de **qué**, y otro para valores diferentes de **cuando**. Todo junto se vería así:
 
 ```js
 let who = ['The dog','My granma','His turtle','My bird'];

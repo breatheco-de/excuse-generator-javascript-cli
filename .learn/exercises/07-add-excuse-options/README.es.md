@@ -1,6 +1,6 @@
 # `07` Añade Opciones de Excusa
 
-Y ahora es momento! Hemos aprendido todas las habilidades necesarias para generar una excusa aleatoria, nosotros generamos un número aleatorio que puede ser utilizado para acceder a valores de un array, nosotros utilizamos este número para obtener un valor aleatorio de un array, y concatenar múltiples strings juntas, estos son básicamentelos pasos para crear tu propio generador de excusas.
+¡Y ahora es momento! Hemos aprendido todas las habilidades necesarias para generar una excusa aleatoria, nosotros generamos un número aleatorio que puede ser utilizado para acceder a valores de un array, nosotros utilizamos este número para obtener un valor aleatorio del array, y concatenar múltiples strings juntas, estos son básicamente los pasos para crear tu propio generador de excusas.
 
 Aquí está la estructura de una excusa: 
 
