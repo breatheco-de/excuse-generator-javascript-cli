@@ -1,26 +1,44 @@
-# `01` Primer Ejercicio
+# `03.2` Genera Valores Aleatorios
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+En el paso anterior aprendimos cómo generar un número aleatorio entre 0 y 1 (excluyendo ambos). Para poder obtener el número que puede ser utilizado para acceder a los valores del array, debe de ser un entero (sin decimales) y el número debe estar entre 0 y la longitud del array - 1 (Se usa la longitud del array - 1 porque los números de posición empiezan en 0 y no 1)
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+### Genera números aleatorios entre un rango:
 
-## Inserta videos
+Sabemos cómo obtener números aleatorios, ahora añadamos una variación y obtengamos solo números aleatorios entre un rango específico (entre 2 números). Aquí hay un ejemplo.
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+// Vamos a generar un número aleatorio entre 1 y 10.
+let randomNumber = Math.random() * 10 + 1;
+console.log(randomNumber); // Esto va a imprimir un número aleatorio con decimales entre 1 y 10, por ejemplo 3.435 
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+> Estamos multiplicando el número aleatorio por el límite superior del rango y sumando a este resultado el límite inferior del rango.
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+### Convertir un número flotante en entero:
+
+Para poder convertir un flotante (número con decimales) en entero, podemos usar la función `Math.floor()` de Javascript, que va a obtener solamente la parte entera del número. Aquí hay un ejemplo de como funciona: 
+
+```js
+let myFloatNumber = 23.567324;
+let myIntegerNumber = Math.floor(myFloatNumber);
+console.log(myIntegerNumber); // This will print 23
 ```
+
+### Generar un número entero aleatorio entre un rango: 
+
+Ahora que ya sabemos cómo generar un número aleatorio entre un rango específico y cómo convertir un flotante en entero, vamos a poder generar un número entero aleatorio que puede ser utilizado para acceder a los valores de un array. Así es como se vería todo en conjunto: 
+
+
+```js
+let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit;
+```
+
+> Si remplazas el límite superior y el límite inferior de tu rango, entonces vas a poder generar un número entero aleatorio que pertenece al rango.
+
+## 📝 Instrucciones:
+
+1. Genera un número entero aleatorio entre 0 y 4.
+
+## 💡 Pista:
+
++ Si el límite inferior es 0, entonces no tienes que sumar nada.

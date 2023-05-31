@@ -6,4 +6,4 @@
 
 ## 💡 Hint:
 
-+ Remember the random number used as the position to access a value from the array should be between 0 and the length of the array (Each of the arrays have different length).
++ Remember the random number used as the position to access a value from the array should be between 0 and the length of the array (Each of the arrays have different lengths).

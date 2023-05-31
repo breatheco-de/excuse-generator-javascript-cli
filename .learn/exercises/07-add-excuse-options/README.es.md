@@ -1,26 +1,21 @@
-# `01` Primer Ejercicio
+# `07` Añade Opciones de Excusa
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+¡Y ahora es momento! Hemos aprendido todas las habilidades necesarias para generar una excusa aleatoria, nosotros generamos un número aleatorio que puede ser utilizado para acceder a valores de un array, nosotros utilizamos este número para obtener un valor aleatorio del array, y concatenar múltiples strings juntas, estos son básicamente los pasos para crear tu propio generador de excusas.
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+Aquí está la estructura de una excusa: 
 
-## Inserta videos
+![Estructura de excusa](../../assets/excuse-structure.gif?raw=true)
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
+Ahora empecemos a crear nuestro generador de excusa. 
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
+## 📝 Instrucciones:
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+1. Elimina todo el contenido del archivo `app.js` (dejalo vacío). 
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+2. Añade los arrays de la estructura de la excusa: 
+
+```js
+let who = ['The dog','My granma','His turtle','My bird'];
+let what = ['ate','pissed','crushed','broked'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
 ```
