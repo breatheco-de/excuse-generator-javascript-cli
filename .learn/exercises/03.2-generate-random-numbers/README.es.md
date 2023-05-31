@@ -8,8 +8,8 @@ Sabemos cómo obtener números aleatorios, ahora añadamos una variación y obte
 
 ```js
 // Vamos a generar un número aleatorio entre 1 y 10.
-let randomNumber = (Math.random() * 10) + 1
-console.log(randomNumber) // Esto va a imprimir un número aleatorio con decimales entre 1 y 10, por ejemplo 3.435 
+let randomNumber = Math.random() * 10 + 1;
+console.log(randomNumber); // Esto va a imprimir un número aleatorio con decimales entre 1 y 10, por ejemplo 3.435 
 ```
 
 > Estamos multiplicando el número aleatorio por el límite superior del rango y sumando a este resultado el límite inferior del rango.
@@ -30,7 +30,7 @@ Ahora que ya sabemos cómo generar un número aleatorio entre un rango específi
 
 
 ```js
-let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit
+let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit;
 ```
 
 > Si remplazas el límite superior y el límite inferior de tu rango, entonces vas a poder generar un número entero aleatorio que pertenece al rango.
