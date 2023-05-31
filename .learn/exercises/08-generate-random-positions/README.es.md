@@ -7,5 +7,4 @@
 
 ## 💡 Pista:
 
-+ Recuerda que el número aleatorio usado como la 
-+ Remember the random number used as the position to access a value from the array should be between 0 and the length of the array (Each of the arrays have different length).
++ Recuerda que el número aleatorio usado como posición para acceder al valor de un array debe estar entre 0 y la longitud del array (Cada uno de los arrays tiene longitudes diferentes)
