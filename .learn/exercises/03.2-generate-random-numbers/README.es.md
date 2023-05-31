@@ -1,6 +1,6 @@
 # `03.2` Genera Valores Aleatorios
 
-En el paso anterior aprendimos cómo generar un número aleatorio entre 0 y 1 (excluyendo ambos). Para poder obtener el número que puede ser utilizado para acceder a los valores del array, debe de ser un entero (sin decimales) y el número debe estar entre 0 y la longitud del array - 1 (es de longitud -1 porque los números de posición empiezan en 0 y no 1)
+En el paso anterior aprendimos cómo generar un número aleatorio entre 0 y 1 (excluyendo ambos). Para poder obtener el número que puede ser utilizado para acceder a los valores del array, debe de ser un entero (sin decimales) y el número debe estar entre 0 y la longitud del array - 1 (Se usa la longitud del array - 1 porque los números de posición empiezan en 0 y no 1)
 
 ### Genera números aleatorios entre un rango:
 
