@@ -1,20 +1,20 @@
 # `05` Acceder a los Valores de un Array Aleatoriamente
 
-Hasta ahora hemos aprendido a cómo generar números enteros aleatorios y a acceder a valores de un array usando la posición del elemento. 
+Hasta ahora hemos aprendido cómo generar números enteros aleatorios y a acceder a valores de un array usando la posición del elemento. 
 
 Entonces, si utilizamos todo lo que hemos aprendido hasta ahora, podemos acceder a los valores aleatorios de nuestro array.
 
 Retrocediendo a cómo generamos anteriormente números enteros aleatorios dentro de un rango, teníamos algo similar a esto:
 
 ```js
-let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit
+let randomNumber = Math.floor(Math.random() * upperLimit) + lowerLimit;
 ```
 
-Entonces, si queremos usar este número aleatorio para obtener un valor de un array, entonces el rango del número debería estar entre 0 y la longitud del array -1. El código se verá algo así: 
+Entonces, si queremos usar este número aleatorio para obtener un valor de un array, entonces el rango del número debería estar entre 0 y la longitud del array - 1. El código se verá algo así: 
 
 ```js
 let names = ["Hannah", "John", "Alejandro"];
-let randomArrayPosition = Math.floor(Math.random() * names.length-1);
+let randomArrayPosition = Math.floor(Math.random() * names.length - 1);
 ```
 
 Y esta `randomArrayPosition` (posición aleatoria del array) que generamos puede ser utilizada para acceder a un valor de un array.
