@@ -4,7 +4,7 @@ Let's create a CLI that generate excuses with Javascript.
 
 For this project we are using arrays to get different values randomly. 
 
-Let's remind how we can access to array values. Array values can be accessed by using the number of the position, The position number will start from 0, therefore if we want to access to the second element of the array we use position 1.
+Let's remind how we can access to array values. Array values can be accessed by using the number of the position, the position number will start from 0, therefore if we want to access to the second element of the array we use position 1.
 
 Here is an example of how to access array values:
 
