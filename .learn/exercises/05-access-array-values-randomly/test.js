@@ -30,6 +30,7 @@ test("You should have an array called developers with the indicated elements", (
 
 test("You should print a random value from developers array", ()=>{
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /console\.log\s*\(\s*developers\s*\[\s*(.*)\s*]\s*\)/gm
+    const regex = /console\.log\s*\(\s*developers\s*\[\s*((?!\d)[^\]]*)\s*]\s*\)/gm;
     expect(regex.test(file.toString())).toBeTruthy();
 })
+

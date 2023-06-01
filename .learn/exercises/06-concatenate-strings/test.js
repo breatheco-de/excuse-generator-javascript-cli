@@ -38,9 +38,34 @@ test("You should have an array called jobTitle with the indicated elements", ()=
 let buffer = "";
 global.console.log = console.log = jest.fn((text) => buffer += text + "\n");
 
-test("You should print a random sentence with the given format using both arrays", ()=>{
-    const file = require("../../../app.js");
-    let regex = /^([\w\s]+) is our ([\w\s]*[\w][\w\s]*)$/
+test("Printed sentence should be a valid combination of developers and jobTitles", () => {
 
-    expect(regex.test(buffer)).toBe(true);
+    // Run the student's script
+    require("../../../app.js");
+
+    // Check whether the printed sentence is a valid combination of developers and jobTitles
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const developers = file.__get__("developers")
+    const jobTitle = file.__get__("jobTitle")
+
+    let combinations = new Set();
+    for(let developer of developers){
+        for(let job of jobTitle){
+            combinations.add(`${developer} is our ${job}`);
+        }
+    }
+  
+    let printedSentence = buffer.trim()
+
+    expect(combinations.has(printedSentence)).toBe(true);
+
+});
+
+
+test('You should print a random value from developers and jobTitle array', () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regex_console = /console\.log\s*\(\s*([a-zA-Z_$][0-9a-zA-Z_$]*)\s*(?:\[\s*Math\.floor\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*\1\.length\s*\)\s*\]|\s*)\s*\+\s*" is our "\s*\+\s*([a-zA-Z_$][0-9a-zA-Z_$]*)\s*(?:\[\s*Math\.floor\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*\2\.length\s*\)\s*\]|\s*)\s*\)/gm;
+
+    const consoleUsage = regex_console.test(file.toString());
+    expect(consoleUsage).toBeTruthy();
 })

@@ -33,3 +33,15 @@ test("You should be generating a random index for each array", ()=>{
 
     expect(hasWhoIndex && hasWhatIndex && hasWhenIndex).toBeTruthy();
 });
+
+test("Random value from each array should be printed", ()=>{
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    
+    const whoRegex = /console\.log\(\s*who\[\s*(?!\d)\w+\s*]\s*\)/gm;
+    const whatRegex = /console\.log\(\s*what\[\s*(?!\d)\w+\s*]\s*\)/gm;
+    const whenRegex = /console\.log\(\s*when\[\s*(?!\d)\w+\s*]\s*\)/gm;
+
+    expect(whoRegex.test(file.toString())).toBeTruthy();
+    expect(whatRegex.test(file.toString())).toBeTruthy();
+    expect(whenRegex.test(file.toString())).toBeTruthy();
+})
