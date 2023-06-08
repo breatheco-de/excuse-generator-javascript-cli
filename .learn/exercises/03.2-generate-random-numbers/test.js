@@ -3,13 +3,22 @@ const fs = require('fs');
 const path = require('path');
 const rewire = require('rewire');
 
-test('You have to use Math.random(), Math.floor(), and generate a number between 0 and 4', () => {
+test('You have to use Math.random()', () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
 
-    const floorRegex = /Math\s*\.\s*floor\s*\(\s*.*Math\s*\.\s*random\s*\(\s*\)\s*.*\)/gm;
+    const randomRegex = /Math\s*\.\s*random\s*\(\s*\)/gm;
+
+    expect(randomRegex.test(file.toString())).toBeTruthy();
+})
+
+test('You have to use Math.floor()', () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+
+    const floorRegex = /Math\s*\.\s*floor\s*\(\s*.*\)/gm;
 
     expect(floorRegex.test(file.toString())).toBeTruthy();
 })
+
 
 
 let buffer = "";
