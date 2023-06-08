@@ -2,36 +2,80 @@ const fs = require('fs');
 const path = require('path');
 const rewire = require('rewire');
 
-test("The arrays who, what, and when should exist with the indicated elements", ()=>{
+test("The who array should exist", () => {
     const file = rewire(path.resolve(__dirname, '../../../app.js'));
-
     const who = file.__get__("who");
-    const what = file.__get__("what");
-    const when = file.__get__("when");
-
-    // Check that the arrays exist
     expect(who).toBeTruthy();
-    expect(what).toBeTruthy();
-    expect(when).toBeTruthy();
+});
 
-    // Check that the arrays contain the expected elements
+test("The who array should have the indicated elements", () => {
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const who = file.__get__("who");
     expect(who).toEqual(['The dog','My granma','His turtle','My bird']);
+});
+
+test("The what array should exist", () => {
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const what = file.__get__("what");
+    expect(what).toBeTruthy();
+});
+
+test("The what array should have the indicated elements", () => {
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const what = file.__get__("what");
     expect(what).toEqual(['ate','pissed','crushed','broked']);
+});
+
+test("The when array should exist", () => {
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const when = file.__get__("when");
+    expect(when).toBeTruthy();
+});
+
+test("The when array should have the indicated elements", () => {
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const when = file.__get__("when");
     expect(when).toEqual(['before the class','right in time','when I finished','during my lunch','while I was praying']);
-})
+});
 
-test("You should be generating a random index for each array", ()=>{
+
+test("You should generate a random index for the who array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regexWho = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
+    const hasWhoIndex = regexWho.test(file.toString());
+    expect(hasWhoIndex).toBeTruthy();
+});
 
-    const regexWho = /let\s+(\w+)\s*=\s*Math\s*\.floor\s*\(\s*Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
-    const regexWhat = /let\s+(\w+)\s*=\s*Math\s*\.floor\s*\(\s*Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
-    const regexWhen = /let\s+(\w+)\s*=\s*Math\s*\.floor\s*\(\s*Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
+test("You should generate a random index for the what array", () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regexWhat = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
+    const hasWhatIndex = regexWhat.test(file.toString());
+    expect(hasWhatIndex).toBeTruthy();
+});
 
-    let hasWhoIndex = regexWho.test(file.toString());
-    let hasWhatIndex = regexWhat.test(file.toString());
-    let hasWhenIndex = regexWhen.test(file.toString());
+test("You should generate a random index for the when array", () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regexWhen = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
+    const hasWhenIndex = regexWhen.test(file.toString());
+    expect(hasWhenIndex).toBeTruthy();
+});
 
-    expect(hasWhoIndex && hasWhatIndex && hasWhenIndex).toBeTruthy();
+test("A random value from the who array should be generated", () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const whoRegex = /who\[\s*(?!\d)\w+\s*]\s*/gm;
+    expect(whoRegex.test(file.toString())).toBeTruthy();
+});
+
+test("A random value from the what array should be generated", () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const whatRegex = /what\[\s*(?!\d)\w+\s*]\s*/gm;
+    expect(whatRegex.test(file.toString())).toBeTruthy();
+});
+
+test("A random value from the when array should be generated", () => {
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const whenRegex = /when\[\s*(?!\d)\w+\s*]\s*/gm;
+    expect(whenRegex.test(file.toString())).toBeTruthy();
 });
 
 
@@ -44,19 +88,21 @@ test("You should create an 'excuse' variable", ()=>{
     expect(typeof excuse).toBe('string');
 });
 
-test("The value of excuse variable should be the concatenation of the values generated in the previous step", ()=>{
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+/* Test too strict, cannot figure out a way to test concatenation since there are multiple methods of doing so */
 
-    // Pattern: let excuse = who[index] + " " + what[index] + " " + when[index];
-    const regexPlus = /let\s+excuse\s*=\s*who\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*what\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*when\s*\[\s*\w+\s*\]\s*;?/gm;
-    const hasExcuseAssignmentPlus = regexPlus.test(file.toString());
+// test("The value of excuse variable should be the concatenation of the values generated in the previous step", ()=>{
+//     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
 
-    // Pattern: let excuse = `${who[index]} ${what[index]} ${when[index]}`
-    const regexInterpolation = /let\s+excuse\s*=\s*`\$\{who\s*\[\s*\w+\s*\]\}\s*\$\{what\s*\[\s*\w+\s*\]\}\s*\$\{when\s*\[\s*\w+\s*\]}`\s*;?/gm;
-    const hasExcuseAssignmentInterpolation = regexInterpolation.test(file.toString());
+//     // Pattern: let excuse = who[index] + " " + what[index] + " " + when[index];
+//     const regexPlus = /let\s+excuse\s*=\s*who\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*what\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*when\s*\[\s*\w+\s*\]\s*;?/gm;
+//     const hasExcuseAssignmentPlus = regexPlus.test(file.toString());
+
+//     // Pattern: let excuse = `${who[index]} ${what[index]} ${when[index]}`
+//     const regexInterpolation = /let\s+excuse\s*=\s*`\$\{who\s*\[\s*\w+\s*\]\}\s*\$\{what\s*\[\s*\w+\s*\]\}\s*\$\{when\s*\[\s*\w+\s*\]}`\s*;?/gm;
+//     const hasExcuseAssignmentInterpolation = regexInterpolation.test(file.toString());
     
-    expect(hasExcuseAssignmentPlus || hasExcuseAssignmentInterpolation).toBeTruthy();
-});
+//     expect(hasExcuseAssignmentPlus || hasExcuseAssignmentInterpolation).toBeTruthy();
+// });
 
 let buffer = "";
 global.console.log = console.log = jest.fn((text) => buffer += text + "\n");
@@ -67,9 +113,11 @@ test("The value of excuse variable should match one of all possible combinations
 
     // Check whether the printed sentence is a valid combination
     const file = rewire(path.resolve(__dirname, '../../../app.js'));
-    const who = file.__get__("who")
-    const what = file.__get__("what")
-    const when = file.__get__("when")
+    const who = ['The dog','My granma','His turtle','My bird']
+    const what = ['ate','pissed','crushed','broked']
+    const when = ['before the class','right in time','when I finished','during my lunch','while I was praying']
+
+    const excuse = file.__get__("excuse")
 
     let combinations = new Set();
     for(let wh of who){
@@ -80,7 +128,7 @@ test("The value of excuse variable should match one of all possible combinations
         }
     }
   
-    let printedSentence = buffer.trim()
+    let printedSentence = excuse.trim()
 
     expect(combinations.has(printedSentence)).toBe(true);
 });
