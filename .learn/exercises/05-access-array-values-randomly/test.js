@@ -41,9 +41,9 @@ test("Developers array should have the indicated elements", ()=>{
 //     expect(regex.test(file.toString())).toBeTruthy();
 // })
 
-test("You should print a random value from developers array between index 0 and the length of the array", ()=>{
+test("You should generate a random index for developers array between 0 and the length of the array - 1", ()=>{
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /console\.log\s*\(\s*developers\s*\[\s*(.*?)\s*]\s*\)/gm;
+    const regex = /(Math\.(floor|ceil|round)\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*developers\.length\s*\))/gm;
 
     const match = regex.exec(file.toString());
 
@@ -65,7 +65,7 @@ test("You should print a random value from developers array between index 0 and 
 
         const evaluatedValue = func(developers);
 
-        if(evaluatedValue < 0 || evaluatedValue > 3){
+        if(evaluatedValue < 0 || evaluatedValue >= developers.length){
             foundOutOfRangeValue = true;
             break;
         }
@@ -73,5 +73,4 @@ test("You should print a random value from developers array between index 0 and 
 
     // The test fails if we found an out of range value
     expect(foundOutOfRangeValue).toBe(false);
-})
-
+});
