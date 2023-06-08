@@ -21,19 +21,30 @@ test('You should be using Math.floor(), Math.ceil, OR Math.round functions ', ()
     expect(has_rounding).toBeTruthy();
 })
 
-test("You should have an array called developers with the indicated elements", ()=>{
+test("You should have an array called developers", ()=>{
     const file = rewire(path.resolve(__dirname, '../../../app.js'));
     const developers = file.__get__("developers")
     expect(developers).toBeTruthy()
+})
+
+test("Developers array should have the indicated elements", ()=>{
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const developers = file.__get__("developers")
     expect(developers).toEqual(["Karla", "Alex", "Joe", "Thomas"])
 })
 
-test("You should have an array called jobTitle with the indicated elements", ()=>{
+test("You should have an array called jobTitle", ()=>{
     const file = rewire(path.resolve(__dirname, '../../../app.js'));
     const jobTitle = file.__get__("jobTitle")
     expect(jobTitle).toBeTruthy()
+})
+
+test("jobTitle array should have the indicated elements", ()=>{
+    const file = rewire(path.resolve(__dirname, '../../../app.js'));
+    const jobTitle = file.__get__("jobTitle")
     expect(jobTitle).toEqual(["Software developer", "Technical lead", "Data scientist", "CTO"])
 })
+
 
 let buffer = "";
 global.console.log = console.log = jest.fn((text) => buffer += text + "\n");
