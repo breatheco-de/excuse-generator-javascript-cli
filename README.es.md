@@ -8,7 +8,7 @@ Disneylandia para procrastinadores y perezosos.
 
 ## El Objetivo
 
-Queríamos un proyecto que usara muy poco Python, pero aun con una aplicación muy divertida, el generador de excusas toma 20 líneas de código, es súper simple de entender y es el primer proyecto perfecto para cualquier desarrollador principiante.
+Queríamos un proyecto que usara muy poco Javascript, pero aun con una aplicación muy divertida, el generador de excusas toma 20 líneas de código, es súper simple de entender y es el primer proyecto perfecto para cualquier desarrollador principiante.
 
 ## 🌱  ¿Cómo iniciar este proyecto?
 
@@ -32,7 +32,7 @@ $ learnpack start
 
 ## Instrucciones
  
-Por favor, crea un script de python que genere una excusa cada vez que se ejecute.
+Por favor, crea un script de Javascript que genere una excusa cada vez que se ejecute.
 
 ## Discute con tus compañeros de clase la estrategia primero
 
@@ -46,28 +46,28 @@ Por favor, crea un script de python que genere una excusa cada vez que se ejecut
 
 1. Crea un archivo `app.py` con una excusa programada en una variable.
 2. La excusa debe estar en una variable:
-```python
-excuse = 'The dog eat my homework when I finished'
+```js
+let excuse = 'The dog eat my homework when I finished';
 ```
-3. Usando python, crea una función que genere y devuelva una excusa aleatoria con la siguiente estructura:
-```python
-who = ['the dog','my granma','his turtle','my bird']
-what = ['eat','pissed','crushed','broked']
-when = ['before the class','right in time','when I finished','during my lunch','while I was praying']
+3. Usando Javascript, crea una función que genere y devuelva una excusa aleatoria con la siguiente estructura:
+```js
+let who = ['the dog','my granma','his turtle','my bird'];
+let what = ['eat','pissed','crushed','broked'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
 ```
 4. Para crear una excusa consistente, debes concatenar un elemento de cada array en el orden correcto.
-5. Imprime la excusa en la consola usando la función `print`.
+5. Imprime la excusa en la consola usando la función `console.log()`.
 
 ## Tecnologías
 
-Python.
+Javascript.
 
 ## Fundamentos
 
 Este ejercicio cubre los siguientes fundamentos:
 
-1. Correr archivos python.
-2. Cómo trabajar con Listas (arrays).
+1. Correr archivos Javascript.
+2. Cómo trabajar con Arrays.
 3. Generar números aleatorios.
 4. Concatenar strings.
 5. Usar funciones (al menos un poco).
