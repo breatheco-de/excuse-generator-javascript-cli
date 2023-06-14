@@ -4,7 +4,7 @@
 
 Disneylandia para procrastinadores y perezosos.
 
-¡Este proyecto es ideal para evitar a alguien molesto, no requiere más de 20 líneas de código y puede salvarte por el resto de su vida!
+¡Este proyecto es ideal para evitar a alguien molesto, no requiere más de 20 líneas de código y puede salvarte por el resto de tu vida!
 
 ## El Objetivo
 
