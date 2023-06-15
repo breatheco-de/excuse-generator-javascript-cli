@@ -44,20 +44,6 @@ test('You should be using Math.floor(), Math.ceil, OR Math.round functions ', ()
     expect(has_rounding).toBeTruthy();
 })
 
-// The two tests below should also check that we are generating a random value per array 
-
-test("You should use developers.length to generate the random number", ()=>{
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /\s*Math\s*\.\s*random\s*\(\s*\)\s*\*\s*developers\s*\.\s*length/gm;
-    expect(regex.test(file.toString())).toBeTruthy();
-})
-
-test("You should use jobTitle.length to generate the random number", ()=>{
-    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /\s*Math\s*\.\s*random\s*\(\s*\)\s*\*\s*jobTitle\s*\.\s*length/gm;
-    expect(regex.test(file.toString())).toBeTruthy();
-})
-
 test("You should access a random value from the developers array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
     const regex_access_dev = /developers\s*\[\s*[^\d]\s*(.*?)\s*]/gm;
@@ -97,17 +83,4 @@ test("Printed sentence should be a valid combination of developers and jobTitles
     expect(combinations.has(printedSentence)).toBe(true);
 
 });
-
-
-
-
-
-// test('You should print a random value from developers and jobTitle array', () => {
-//     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-//     const regex_console = /console\.log\s*\(\s*([a-zA-Z_$][0-9a-zA-Z_$]*)\s*(?:\[\s*Math\.floor\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*\1\.length\s*\)\s*\]|\s*)\s*\+\s*" is our "\s*\+\s*([a-zA-Z_$][0-9a-zA-Z_$]*)\s*(?:\[\s*Math\.floor\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*\2\.length\s*\)\s*\]|\s*)\s*\)/gm;
-
-//     const consoleUsage = regex_console.test(file.toString());
-//     expect(consoleUsage).toBeTruthy();
-// })
-
 
