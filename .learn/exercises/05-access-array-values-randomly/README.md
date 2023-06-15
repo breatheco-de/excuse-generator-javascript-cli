@@ -14,7 +14,7 @@ So if we want to use this random number to get a value from an array, then the r
 
 ```js
 let names = ["Hannah", "John", "Alejandro"];
-let randomArrayPosition = Math.floor(Math.random() * names.length-1);
+let randomArrayPosition = Math.floor(Math.random() * names.length);
 ```
 
 And this `randomArrayPosition` that we generated can be used to access an array value.
