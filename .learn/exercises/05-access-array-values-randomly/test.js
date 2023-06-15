@@ -33,17 +33,16 @@ test("Developers array should have the indicated elements", ()=>{
     expect(developers).toEqual(["Karla", "Alex", "Joe", "Thomas"])
 })
 
-/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓ TO BE REVIEWED ↓↓↓↓↓↓↓↓↓↓↓↓*/ 
 
-// test("You should use developers.length to generate the random number", ()=>{
-//     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-//     const regex = /developers\s*\.\s*length/gm;
-//     expect(regex.test(file.toString())).toBeTruthy();
-// })
+test("You should use developers.length to generate the random number", ()=>{
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regex = /developers\s*\.\s*length/gm;
+    expect(regex.test(file.toString())).toBeTruthy();
+})
 
 test("You should generate a random index for developers array between 0 and the length of the array - 1", ()=>{
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regex = /(Math\.(floor|ceil|round)\s*\(\s*Math\.random\s*\(\s*\)\s*\*\s*developers\.length\s*\))/gm;
+    const regex = /\s*Math\.random\s*\(\s*\)\s*\*\s*developers\.length\s*/gm;
 
     const match = regex.exec(file.toString());
 
