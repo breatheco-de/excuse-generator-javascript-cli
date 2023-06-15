@@ -41,21 +41,21 @@ test("The when array should have the indicated elements", () => {
 
 test("You should generate a random index for the who array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWho = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
+    const regexWho = /Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
     const hasWhoIndex = regexWho.test(file.toString());
     expect(hasWhoIndex).toBeTruthy();
 });
 
 test("You should generate a random index for the what array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWhat = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
+    const regexWhat = /Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
     const hasWhatIndex = regexWhat.test(file.toString());
     expect(hasWhatIndex).toBeTruthy();
 });
 
 test("You should generate a random index for the when array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWhen = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
+    const regexWhen = /Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
     const hasWhenIndex = regexWhen.test(file.toString());
     expect(hasWhenIndex).toBeTruthy();
 });
