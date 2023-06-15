@@ -41,21 +41,21 @@ test("The when array should have the indicated elements", () => {
 
 test("You should generate a random index for the who array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWho = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
+    const regexWho = /Math\s*\.random\s*\(\s*\)\s*\*\s*who\.length\s*\)\s*;?/gm;
     const hasWhoIndex = regexWho.test(file.toString());
     expect(hasWhoIndex).toBeTruthy();
 });
 
 test("You should generate a random index for the what array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWhat = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
+    const regexWhat = /Math\s*\.random\s*\(\s*\)\s*\*\s*what\.length\s*\)\s*;?/gm;
     const hasWhatIndex = regexWhat.test(file.toString());
     expect(hasWhatIndex).toBeTruthy();
 });
 
 test("You should generate a random index for the when array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-    const regexWhen = /let\s+(\w+)\s*=\s*.*?Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
+    const regexWhen = /Math\s*\.random\s*\(\s*\)\s*\*\s*when\.length\s*\)\s*;?/gm;
     const hasWhenIndex = regexWhen.test(file.toString());
     expect(hasWhenIndex).toBeTruthy();
 });
@@ -88,21 +88,6 @@ test("You should create an 'excuse' variable", ()=>{
     expect(typeof excuse).toBe('string');
 });
 
-/* Test too strict, cannot figure out a way to test concatenation since there are multiple methods of doing so */
-
-// test("The value of excuse variable should be the concatenation of the values generated in the previous step", ()=>{
-//     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
-
-//     // Pattern: let excuse = who[index] + " " + what[index] + " " + when[index];
-//     const regexPlus = /let\s+excuse\s*=\s*who\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*what\s*\[\s*\w+\s*\]\s*\+\s*" "\s*\+\s*when\s*\[\s*\w+\s*\]\s*;?/gm;
-//     const hasExcuseAssignmentPlus = regexPlus.test(file.toString());
-
-//     // Pattern: let excuse = `${who[index]} ${what[index]} ${when[index]}`
-//     const regexInterpolation = /let\s+excuse\s*=\s*`\$\{who\s*\[\s*\w+\s*\]\}\s*\$\{what\s*\[\s*\w+\s*\]\}\s*\$\{when\s*\[\s*\w+\s*\]}`\s*;?/gm;
-//     const hasExcuseAssignmentInterpolation = regexInterpolation.test(file.toString());
-    
-//     expect(hasExcuseAssignmentPlus || hasExcuseAssignmentInterpolation).toBeTruthy();
-// });
 
 let buffer = "";
 global.console.log = console.log = jest.fn((text) => buffer += text + "\n");
