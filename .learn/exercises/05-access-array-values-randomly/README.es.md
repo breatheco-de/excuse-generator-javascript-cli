@@ -14,7 +14,7 @@ Entonces, si queremos usar este número aleatorio para obtener un valor de un ar
 
 ```js
 let names = ["Hannah", "John", "Alejandro"];
-let randomArrayPosition = Math.floor(Math.random() * names.length - 1);
+let randomArrayPosition = Math.floor(Math.random() * names.length);
 ```
 
 Y esta `randomArrayPosition` (posición aleatoria del array) que generamos puede ser utilizada para acceder a un valor de un array.
