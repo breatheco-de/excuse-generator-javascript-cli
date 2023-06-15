@@ -1,26 +1,30 @@
-# `01` Primer Ejercicio
+# `00` Bienvenido
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+Vamos a crear un CLI que genere excusas en Javascript.
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+Para este proyecto estamos usando arrays (arreglos) para obtener diferentes valores aleatoriamente.
 
-## Inserta videos
+Recordemos cómo podemos acceder a los valores de un array. Puedes acceder a los valores de un array usando el número de su posición. El número de la posición va a empezar desde el 0, así que por ejemplo, si queremos acceder al segundo elemento, usamos la posición 1.  
 
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
+Aquí hay un ejemplo de como acceder a los valores de un array:
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+let animals = ["horse", "dog", "cat"];
+console.log(animals[1]); // Esto va a imprimir "dog".
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+> Ten en cuenta que estamos usando el número `1` entre corchetes `[]` para acceder a la segunda posición ("dog") de este array de `animales`.
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
+Ahora que sabemos cómo acceder a los valores del array, vamos a explicar por qué elegimos arrays para generar una excusa aleatoria. Si quieres generar valores aleatorios en Javascript, tienes que empezar generando números aleatorios, luego podemos acceder a los valores de un array utilizando este número aleatorio como la posición del elemento al cual vamos a acceder desde el array, y así es como vamos a resolver este reto.
+
+En este proyecto vas a estar aprendiendo todo sobre como generar números aleatorios, acceder a valores de un array, concatenar strings, y mejorar tu lógica de programación con un enfoque muy cool y divertido de la vida real.
+
+Te vamos a guiar paso a paso hasta que completes la asignación; enseñándote todos estos nuevos conceptos con tests automáticos que te van a decir si estás yendo en el camino correcto.
+
+¡Espero que disfrutes el proyecto y aprendas cosas nuevas!
+
+
+
+
+
+

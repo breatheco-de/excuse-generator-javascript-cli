@@ -1,6 +1,6 @@
 # `03.1` Generate Random Values
 
-Let's learn new concepts starting wiht generating a random number. In order to generate a random number we can use the Javascript function `Math.random()` which will generate a random number between 0 and 1 (excluding the 1).
+Let's learn new concepts, starting with generating a random number. In order to generate a random number, we can use the Javascript function `Math.random()` which will generate a random number between 0 and 1 (excluding both).
 
 ## 📝 Instructions:
 
@@ -9,3 +9,6 @@ Let's learn new concepts starting wiht generating a random number. In order to g
 ## 💡 Hint:
 
 + Here is more information about the `Math.random()` function: https://www.w3schools.com/js/js_random.asp.
+
+
+

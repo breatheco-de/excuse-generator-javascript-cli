@@ -1,26 +1,45 @@
-# `01` Primer Ejercicio
+# `06` Concatenar Strings
 
-Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
+El mejor enfoque para este proyecto es dividir nuestra excusa por su estructura, usando un array para cada oración, para que podamos obtener un valor diferente para cada una de ellas.
 
-1. Cada ejercicio debe estar ubicado en carpetas separadas y debe tener un archivo README.md con las instrucciones del ejercicio escrito en markdown.
-2. Puedes tener un archivo README el cual será como una página de un libro, sin archivos de código.
-3. También puedes agregar un archivo `README.[lenguaje].md` para traducciones, por ejemplo `README.es.md` para español.
+Podemos dividir nuestra excusa por **who** (**quién**) la hizo, **what** (**qué**) pasó, **when** (**cuando**) pasó. Si ese es el caso, podemos tener un array para valores diferentes de **quién**, otro para valores diferentes de **qué**, y otro para valores diferentes de **cuando**. Todo junto se vería así:
 
-## Inserta videos
-
-Si quieres incluir algún video introductorio para cada ejercicio, agrega la propiedad `intro` en el inicio del README.md para ese ejercicio en particular:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+```js
+let who = ['The dog','My granma','His turtle','My bird'];
+let what = ['ate','pissed','crushed','broked'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
 ```
 
-Tambien puedes agregar un video explicando la solución para cada ejercicio agregando la propiedad `tutorial` al inicio del markdown del README.md correspondiente:
+Con un array para cada parte de la estructura de la excusa, podemos generar muchas combinaciones diferentes entre ellas para obtener más excusas.
 
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
+Volviendo a nuestro problema, ya sabemos cómo generar un valor aleatorio de un array, pero en este caso, necesitamos obtener un valor aleatorio de 3 arrays diferentes. Para generar una excusa de estos valores, tenemos que ponerlos juntos en una string, ¡ahí es exactamente donde la concatenación entra en acción!
+
+## 📝 Instrucciones:
+
+1. Añade este nuevo array junto a `developer`:
+
+```js
+let jobTitle = ["Software developer", "Technical lead", "Data scientist", "CTO"];
 ```
+
+2. Obtén un valor aleatorio de cada uno de los arrays (`developers` y `jobTitles`) y concaténalos para obtener una frase con esta estructura:
+
+```js
+{developer} is our {jobTitle}
+```
+
+3. Imprime el array resultante en la consola.
+
+## Salida esperada:
+
+```js
+"Karla is our CTO"
+"Alex is our Technical lead"
+"Joe is our Software developer"
+```
+
+> Ten en cuenta que todos estos son posibles salidas. En tu caso, solo debes imprimir una, pero como va a ser generado aleatoriamente, debe de ser diferente cada vez que los construyas.
+
+## 💡 Pista:
+
++ Puedes concatenar strings usando `+` o con los backsticks.
