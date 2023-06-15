@@ -44,6 +44,19 @@ test('You should be using Math.floor(), Math.ceil, OR Math.round functions ', ()
     expect(has_rounding).toBeTruthy();
 })
 
+test("You should use developers.length to generate the random number", ()=>{
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regex = /\s*developers\s*\.\s*length/gm;
+    expect(regex.test(file.toString())).toBeTruthy();
+})
+
+test("You should use jobTitle.length to generate the random number", ()=>{
+    const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
+    const regex = /\s*jobTitle\s*\.\s*length/gm;
+    expect(regex.test(file.toString())).toBeTruthy();
+})
+
+
 test("You should access a random value from the developers array", () => {
     const file = fs.readFileSync(path.resolve(__dirname, '../../../app.js'), 'utf8');
     const regex_access_dev = /developers\s*\[\s*[^\d]\s*(.*?)\s*]/gm;
