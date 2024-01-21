@@ -1,3 +1,5 @@
+// This is an excuse generator for the javascript prework course.
+
 let whotoblame = ["the dog", "my gramma", "the cat", "your mama"];
 let whattheydid = ["eat", "pissed", "crushed", "broke"];
 let whatdoyouwanttoavoid = [
