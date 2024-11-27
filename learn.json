@@ -2,6 +2,7 @@
   "grading": "incremental",
   "difficulty": "easy",
   "duration": 3,
+  "template_url": "https://github.com/breatheco-de/excuse-generator-javascript-cli",
   "language": "node",
   "projectType": "tutorial",
   "description": "Create an excuse generator with a CLI using Javascript",

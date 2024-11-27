@@ -10,11 +10,12 @@ Disneylandia para procrastinadores y perezosos.
 
 Queríamos un proyecto que usara muy poco Javascript, pero aun con una aplicación muy divertida, el generador de excusas toma 20 líneas de código, es súper simple de entender y es el primer proyecto perfecto para cualquier desarrollador principiante.
 
+<onlyfor saas="false" withBanner="false"
+
 ## 🌱  ¿Cómo iniciar este proyecto?
 
 1. Asegúrate de tener una cuenta de Github en: https://github.com
 2. Recomendamos abrir este repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computador local usando el comando `git clone`.
-
 
 Este es el repositorio que necesitas abrir o clonar:
 
@@ -29,6 +30,8 @@ https://github.com/breatheco-de/excuse-generator-javascript-cli
 ```bash
 $ learnpack start
 ```
+
+</onlyfor>
 
 ## Instrucciones
  
