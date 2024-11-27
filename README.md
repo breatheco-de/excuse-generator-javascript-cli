@@ -10,7 +10,7 @@ This project is ideal for avoiding someone annoying; it takes no more than 20 li
 
 We wanted a project that used very little Javascript but still, with a very fun application, the excuse generator takes 20 lines of code, is super simple to understand, and is the perfect first-ish project for any beginner developer.
 
-<onlyfor saas="false" withBanner="false"
+<onlyfor saas="false" withBanner="false">
 
 ## 🌱  How to start this project?
 
