@@ -4,6 +4,8 @@
   "duration": 3,
   "language": "node",
   "projectType": "tutorial",
+  "autoPlay": "true",
+  "template_url": "self",
   "description": "Create an excuse generator with a CLI using Javascript",
   "title": "Excuse Generator CLI with Javascript",
   "slug": "excuse-generator-cli-with-javascript",
