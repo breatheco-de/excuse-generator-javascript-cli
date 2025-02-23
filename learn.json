@@ -3,6 +3,7 @@
   "difficulty": "easy",
   "duration": 3,
   "language": "node",
+  "technologies": ["javascript", "cli"],
   "projectType": "tutorial",
   "autoPlay": "true",
   "template_url": "self",
