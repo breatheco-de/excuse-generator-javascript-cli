@@ -3,14 +3,26 @@
   "difficulty": "easy",
   "duration": 3,
   "language": "node",
+  "technologies": ["javascript", "cli"],
   "projectType": "tutorial",
-  "description": "Create an excuse generator with a CLI using Javascript",
-  "title": "Excuse Generator CLI with Javascript",
+  "autoPlay": "true",
+  "template_url": "self",
+  "description": {
+		"us": "Create a fun excuse generator using Javascript in a CLI environment! This simple project generates random excuses by combining parts of sentences like “who,” “what,” and “when.” It’s an easy-to-understand, beginner-friendly project with less than 20 lines of code. Perfect for practicing arrays, functions, and string manipulation",
+		"es": "¡Crea un divertido generador de excusas usando Javascript en un entorno CLI! Este proyecto simple genera excusas aleatorias combinando partes de oraciones como “quién”, “qué” y “cuándo”. Es un proyecto fácil de entender, ideal para principiantes, con menos de 20 líneas de código — perfecto para practicar arrays, funciones y manipulación de strings."
+	},
+  "title": {
+		"us": "Excuse Generator CLI with Javascript",
+		"es": "El generador de excusas CLI con Javascript"
+	},
   "slug": "excuse-generator-cli-with-javascript",
   "preview": "https://breathecode.herokuapp.com/v1/media/file/screenshot-2023-04-13-at-4-31-02-pm-png",
   "editor": {
     "mode": "preview",
     "agent": "vscode",
-    "version": "1.0.73"
+    "version": "1.0.73",
+    "telemetry": {
+	"batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=938"
+	}
   }
 }

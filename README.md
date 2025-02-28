@@ -10,6 +10,8 @@ This project is ideal for avoiding someone annoying; it takes no more than 20 li
 
 We wanted a project that used very little Javascript but still, with a very fun application, the excuse generator takes 20 lines of code, is super simple to understand, and is the perfect first-ish project for any beginner developer.
 
+<how-to-start>
+  
 ## 🌱  How to start this project?
 
 1. Make sure you have a Github account at:  https://github.com
@@ -28,6 +30,7 @@ https://github.com/breatheco-de/excuse-generator-javascript-cli
 ```bash
 $ learnpack start
 ```
+</how-to-start>
 
 ## Instructions
 
