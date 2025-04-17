@@ -43,7 +43,7 @@ The idea is to generate each part of the sentence randomly to come up with great
 
 ## Hint
 
-1. Create an `app.py` file with one excuse hard-coded in one variable.
+1. Create an `app.js` file with one excuse hard-coded in one variable.
 2. The excuse must be in a variable:
 ```js
 excuse = 'The dog eat my homework when I finished'
@@ -51,7 +51,7 @@ excuse = 'The dog eat my homework when I finished'
 3. Using Javascript, create a function that generates and returns a random excuse with the following structure:
 ```js
 let who = ['the dog','my granma','his turtle','my bird'];
-let what = ['eat','pissed','crushed','broked'];
+let what = ['ate','pissed','crushed','broked'];
 let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
 ```
 4. To create a consistent excuse, you have to concatenate one item from each array in the proper order.
